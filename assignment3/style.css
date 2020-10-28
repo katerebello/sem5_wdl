@@ -23,8 +23,7 @@ body{
 }
 
 .title{
-    font-weight: lighter;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
 }
 table{
     color: indigo;
@@ -63,7 +62,7 @@ a{
     text-decoration: none;
 }
 
-footer{
+.foot{
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -77,6 +76,11 @@ footer{
 }
 .aboutus{
     background-image: linear-gradient(to right, rgb(142, 235, 241),white);
+}
+
+h6{
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
