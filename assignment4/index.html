@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-form validation</title>
+</head>
+<body style="text-align: center; padding: 10px 100px;">
+    <div style="border: 4px solid black;">
+
+        <h1>University of Mumbai</h1>
+        <h2>Department Of Computer Engineering</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="Kate Rebello"><br><br>
+        <label for="class">Class:</label>
+        <input type="text" value="CMPNB">
+        <label for="Rollno">Rollno:</label>
+        <input type="text" value="8"><br><br>
+
+        <!--user input marks-->
+        <b>Enter Marks:</b>
+        <br><br>
+        <b>Computer Graphics:</b><input type="number" placeholder="out of 100" id='s1' required><br><br>
+        <b>WDL:</b><input type="number" id="s2" placeholder="out of 100" required><br><br>
+        <b>Python:</b><input type="number" id="s3" placeholder="out of 100" required><br><br>
+        <b>Java:</b><input type="number" id="s4" placeholder="out of 100" required><br><br>
+        <b>DBMS:</b> <input type="number" id="s5" placeholder="out of 100" required><br><br>
+
+        <!--button to view grade-->
+        <input type="submit" onclick="calculate();" value="Get Grade"> <br> <br>
+
+    </div>
+    
+    <!--show grades-->
+    <div id="showgrade" style=" background: cadetblue; visibility: hidden;">
+        <br>
+        Total Marks:<input type="number" id="total"><br><br>
+        Percentage: <input type="number" id="percent"><br><br>
+        Grade: <input type="text" id="grade">
+        <br><br>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
