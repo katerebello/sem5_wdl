@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js form validation</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: aquamarine;
+        }
+        #display{
+            color: red;
+            font-weight: bolder;
+        }
+        h1{
+            text-transform: uppercase;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Assignment-5:Js Form Validation</h1>
+    <form action="" method="get" name="validation">
+
+        <label for="userid">Enter UserID:</label>
+        <input type="userid" name="userid" placeholder="length 5-12">
+        <br><br>
+        <label for="pswd">Password:</label>
+        <input type="password" name="pswd" placeholder="length 7-12">
+        <br><br>
+        <label for="name">Enter Name:</label>
+        <input type="text" name="name" placeholder="Alphabets only">
+        <br><br>
+        <label for="address">Address:</label>
+        <input type="text" namee="address">
+        <br><br>
+        <select name="country" id="">
+            <option value="default">select country</option>
+            <option value="India">India</option>
+            <option value="Japan">Japan</option>
+            <option value="Europe">Europe</option>
+        </select>
+        <br><br>
+        <label for="zipcode">ZipCode:</label>
+        <input type="number" name="zipcode">
+        <label for="email">Email:</label>
+        <input type="text" name="email">
+        <br><br>
+        <label for="sex">Sex:</label>
+        <input type="radio" name="sex" value="male">Male
+        <input type="radio" name="sex" value="female">female
+        <br><br>
+        <label for="language">Language:</label>
+        <input type="checkbox" name="language1" value="English">English
+        <input type="checkbox" name="language2" value="Non-English">Non-English
+        <br><br>
+        <label for="about">About:</label><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea> 
+        <br>
+        <input type="button" value="Submit" onclick="formvalidation();">
+    </form>
+    <p id="display"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
